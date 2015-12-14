@@ -9,8 +9,7 @@ import java.util.Iterator;
 public class Thesaurus {
 		
 	public HashMap<String, Entry> entries;
-	public HashMap<String, Affixer.Affix> conjugations;
-	public HashMap<String, Character> conjugationRules;
+	public HashMap<String, Affixer.Affix> conjugationRules;
 	
 	public Affixer afxr;
 
@@ -19,10 +18,10 @@ public class Thesaurus {
 	}
 	
 	public Thesaurus() throws Exception {
-	    afxr = new Affixer();
+	    this.afxr = new Affixer();
 	    
-		entries = new HashMap<String, Entry>();
-		conjugations = new HashMap<String, Affixer.Affix>();
+		this.entries = new HashMap<String, Entry>();
+	    this.conjugationRules = new HashMap<String, Affixer.Affix>();
 
 		File thesaurusFile = new File("src/finalProject/th_en_US_new.dat");
 //		File thesaurusFile = new File("src/finalProject/short_ths.dat");
@@ -93,38 +92,43 @@ public class Thesaurus {
 	}
 	
 	public void conjugateAllWords() {
-        HashMap<String, Entry> conjugations = new HashMap<String, Entry>();;
-        conjugationRules = new HashMap<String, Character>();;
+        HashMap<String, Entry> conjugatedForms = new HashMap<String, Entry>();
 	    
         for (java.util.Map.Entry<String, Entry> ent : this.entries.entrySet()) {
             Entry entry = ent.getValue();
             String conjugation;
             for (Affixer.Affix afx : entry.affixes) {
+                // construct the form
                 conjugation = Affixer.applyRules(afx, entry.word);
-//                if (conjugation.equals("b")
-//                    || entry.word.equals("b")
-//                ) {
-//                    System.out.println(conjugation);
-//                    System.out.println(entry);
-//                }
-//                System.out.println(conjugation);
+                // add it to the entry
+                entry.forms.put(conjugation, afx);
+                // don't overwrite duplicates from other stems
+                // because the thesaurus entry is more correct than the generated form
                 if (!entries.containsKey(conjugation)) {
-                    conjugations.put(conjugation, entry);
-                    conjugationRules.put(conjugation, afx.id);
+                    conjugatedForms.put(conjugation, entry);
+                    // TODO: error checking on this for duplicate conjugations
+                    conjugationRules.put(conjugation, afx);
+                } else {
+                    // System.out.println("Duplicate conjugation: " + conjugation + ", already have "+ entries.get(conjugation));
                 }
             }
         }
-        entries.putAll(conjugations);
+        // We already duplicate checked this
+        entries.putAll(conjugatedForms);
 	}
+	
+//	public void linkAllSynonyms() {
+//	    
+//	}
 
 	public String getSynonym(String word) {
 	    Entry entry = entries.get(word);
-	    Character conj = conjugationRules.get(word);
+	    Affixer.Affix afx = conjugationRules.get(word);
 	    // for "unconjugated" words:
-	    if (conj == null) return word;
+	    if (afx == null) return word;
 	    
 	    String syn = entry.getLongSynonym();
-	    return afxr.applyRules(conj, syn);
+	    return afxr.applyRules(afx, syn);
 	}
 
 	
@@ -169,6 +173,7 @@ public class Thesaurus {
 	/**
 	 * NEVER DO THIS
 	 * (It will take many minutes to return.)
+	 * Use printEntries() instead
 	 * @return
 	 */
 	@Deprecated
@@ -182,5 +187,11 @@ public class Thesaurus {
 		}
 		return repr;
 	}
-	
+
+    public void printEntries() {
+        for (java.util.Map.Entry<String, Entry> entry : this.entries.entrySet()) {
+            System.out.println(entry.getValue());
+        }
+    }
+
 }

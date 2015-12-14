@@ -86,6 +86,13 @@ public class Affixer {
 		What follows is cut and pasted from the instructions at
 		http://whiteboard.openoffice.org/lingucomponent/affix.readme
 		
+		# Example verb past tense
+        SFX D Y 4
+        SFX D   0     d          e
+        SFX D   0     ed         [^ey]
+        SFX D   0     ed         [aeiou]y
+        SFX D   y     ied        [^aeiou]y
+		
 		The first line has 4 fields:
 		
 		Field
