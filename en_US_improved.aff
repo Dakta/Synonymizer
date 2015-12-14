@@ -463,55 +463,6 @@ SFX p 0 less [^ly]
 SFX p 0 less [aeiou]y 
 SFX p y iless [^aeiou]y 
 
-# -ise, -ised, -ises, -ising, -ize, -ized, -izes, -izing, all generated!
-# TODO: consolidate with standard verb rules
-# verb
-SFX Q Y 44
-SFX Q 0 ise [^aemsy] 
-SFX Q 0 ise [^i]s 
-SFX Q 0 ise [^u]m 
-SFX Q 0 ise [aeiou]y 
-SFX Q 0 ised [^aemsy] 
-SFX Q 0 ised [^i]s 
-SFX Q 0 ised [^u]m 
-SFX Q 0 ised [aeiou]y 
-SFX Q 0 ises [^aemsy] 
-SFX Q 0 ises [^i]s 
-SFX Q 0 ises [^u]m 
-SFX Q 0 ises [aeiou]y 
-SFX Q 0 ising [^aemsy] 
-SFX Q 0 ising [^i]s 
-SFX Q 0 ising [^u]m 
-SFX Q 0 ising [aeiou]y 
-SFX Q 0 tise a 
-SFX Q 0 tised a 
-SFX Q 0 tises a 
-SFX Q 0 tising a 
-SFX Q e ise [^l]e 
-SFX Q e ise [aeiou]le 
-SFX Q e ised [^l]e 
-SFX Q e ised [aeiou]le 
-SFX Q e ises [^l]e 
-SFX Q e ises [aeiou]le 
-SFX Q e ising [^l]e 
-SFX Q e ising [aeiou]le 
-SFX Q le ilise [^aeiou]le 
-SFX Q le ilised [^aeiou]le 
-SFX Q le ilises [^aeiou]le 
-SFX Q le ilising [^aeiou]le 
-SFX Q s se is 
-SFX Q s sed is 
-SFX Q s ses is 
-SFX Q s sing is 
-SFX Q um ise um 
-SFX Q um ised um 
-SFX Q um ises um 
-SFX Q um ising um 
-SFX Q y ise [^aeiou]y 
-SFX Q y ised [^aeiou]y 
-SFX Q y ises [^aeiou]y 
-SFX Q y ising [^aeiou]y 
-
 # -isation, -isations, -ization, -izations, all generated
 # TODO: consolidate with standard noun rules
 # noun
@@ -542,108 +493,44 @@ SFX q y isations [^aeiou]y
 # -er, -ers, er's, doer, last syllable stressed, both forms generated
 # TODO: consolidate with standard noun rules
 # noun
-SFX R Y 72
+SFX R noun SM 24
 SFX R 0 ber [^aeio][aeiou]b 
-SFX R 0 ber's [^aeio][aeiou]b 
-SFX R 0 bers [^aeio][aeiou]b 
 SFX R 0 der [^aeio][aeiou]d 
-SFX R 0 der's [^aeio][aeiou]d 
-SFX R 0 ders [^aeio][aeiou]d 
 SFX R 0 er [^aeiou][bcdfgklmnprstvz] 
 SFX R 0 er [^ebcdfgklmnprstvyz] 
 SFX R 0 er [aeio][aeiou][bcdfgkmnprstvz] 
 SFX R 0 er [aeio][eiou]l 
 SFX R 0 er [aeiou]y 
 SFX R 0 er [aeo]al 
-SFX R 0 er's [^aeiou][bcdfgklmnprstvz] 
-SFX R 0 er's [^ebcdfgklmnprstvyz] 
-SFX R 0 er's [aeio][aeiou][bcdfgkmnprstvz] 
-SFX R 0 er's [aeio][eiou]l 
-SFX R 0 er's [aeiou]y 
-SFX R 0 er's [aeo]al 
-SFX R 0 ers [^aeiou][bcdfgklmnprstvz] 
-SFX R 0 ers [^ebcdfgklmnprstvyz] 
-SFX R 0 ers [aeio][aeiou][bcdfgkmnprstvz] 
-SFX R 0 ers [aeio][eiou]l 
-SFX R 0 ers [aeiou]y 
-SFX R 0 ers [aeo]al 
 SFX R 0 fer [^aeio][aeiou]f 
-SFX R 0 fer's [^aeio][aeiou]f 
-SFX R 0 fers [^aeio][aeiou]f 
 SFX R 0 ger [^aeio][aeiou]g 
-SFX R 0 ger's [^aeio][aeiou]g 
-SFX R 0 gers [^aeio][aeiou]g 
 SFX R 0 ker [^aeio][aeiou]c 
 SFX R 0 ker [^aeio][aeiou]k 
-SFX R 0 ker's [^aeio][aeiou]c 
-SFX R 0 ker's [^aeio][aeiou]k 
-SFX R 0 kers [^aeio][aeiou]c 
-SFX R 0 kers [^aeio][aeiou]k 
 SFX R 0 ler [^aeio][eiou]l 
 SFX R 0 ler [^aeo]al 
-SFX R 0 ler's [^aeio][eiou]l 
-SFX R 0 ler's [^aeo]al 
-SFX R 0 lers [^aeio][eiou]l 
-SFX R 0 lers [^aeo]al 
 SFX R 0 mer [^aeio][aeiou]m 
-SFX R 0 mer's [^aeio][aeiou]m 
-SFX R 0 mers [^aeio][aeiou]m 
 SFX R 0 ner [^aeio][aeiou]n 
-SFX R 0 ner's [^aeio][aeiou]n 
-SFX R 0 ners [^aeio][aeiou]n 
 SFX R 0 per [^aeio][aeiou]p 
-SFX R 0 per's [^aeio][aeiou]p 
-SFX R 0 pers [^aeio][aeiou]p 
 SFX R 0 r e 
-SFX R 0 r's e 
 SFX R 0 rer [^aeio][aeiou]r 
-SFX R 0 rer's [^aeio][aeiou]r 
-SFX R 0 rers [^aeio][aeiou]r 
-SFX R 0 rs e 
 SFX R 0 ser [^aeio][aeiou]s 
-SFX R 0 ser's [^aeio][aeiou]s 
-SFX R 0 sers [^aeio][aeiou]s 
 SFX R 0 ter [^aeio][aeiou]t 
-SFX R 0 ter's [^aeio][aeiou]t 
-SFX R 0 ters [^aeio][aeiou]t 
 SFX R 0 ver [^aeio][aeiou]v 
-SFX R 0 ver's [^aeio][aeiou]v 
-SFX R 0 vers [^aeio][aeiou]v 
 SFX R 0 zer [^aeio][aeiou]z 
-SFX R 0 zer's [^aeio][aeiou]z 
-SFX R 0 zers [^aeio][aeiou]z 
 SFX R y ier [^aeiou]y 
-SFX R y ier's [^aeiou]y 
-SFX R y iers [^aeiou]y 
 
 # -er, -ers, er's, doer, last syllable NOT stressed, both forms generated
 # TODO: consolidate with standard noun rules
 # noun
-SFX r Y 24
+SFX r noun SM 24
 SFX r 0 er [^aeiou][cl] 
 SFX r 0 er [^ecly] 
 SFX r 0 er [aeio][aeiou][cl] 
 SFX r 0 er [aeiou]y 
-SFX r 0 er's [^aeiou][cl] 
-SFX r 0 er's [^ecly] 
-SFX r 0 er's [aeio][aeiou][cl] 
-SFX r 0 er's [aeiou]y 
-SFX r 0 ers [^aeiou][cl] 
-SFX r 0 ers [^ecly] 
-SFX r 0 ers [aeio][aeiou][cl] 
-SFX r 0 ers [aeiou]y 
 SFX r 0 ker [^aeio][aeiou]c 
-SFX r 0 ker's [^aeio][aeiou]c 
-SFX r 0 kers [^aeio][aeiou]c 
 SFX r 0 ler [^aeio][aeiou]l 
-SFX r 0 ler's [^aeio][aeiou]l 
-SFX r 0 lers [^aeio][aeiou]l 
 SFX r 0 r e 
-SFX r 0 r's e 
 SFX r 0 rs e 
-SFX r y ier [^aeiou]y 
-SFX r y ier's [^aeiou]y 
-SFX r y iers [^aeiou]y 
 
 # -s, noun plurals, verb conjugation
 # TODO: separate this somehow?
@@ -657,44 +544,6 @@ SFX S 0 s [ae]u
 SFX S 0 s [aeiou]y 
 SFX S 0 x [ae]u 
 SFX S y ies [^aeiou]y 
-
-# -iser, -isers, -izer, -izers, -iser's, -izer's, all generated
-# TODO: consolidate with standard noun rules
-# noun
-SFX s Y 33
-SFX s 0 iser [^aemsy] 
-SFX s 0 iser [^i]s 
-SFX s 0 iser [^u]m 
-SFX s 0 iser [aeiou]y 
-SFX s 0 iser's [^aemsy] 
-SFX s 0 iser's [^i]s 
-SFX s 0 iser's [^u]m 
-SFX s 0 iser's [aeiou]y 
-SFX s 0 isers [^aemsy] 
-SFX s 0 isers [^i]s 
-SFX s 0 isers [^u]m 
-SFX s 0 isers [aeiou]y 
-SFX s 0 tiser a 
-SFX s 0 tiser's a 
-SFX s 0 tisers a 
-SFX s e iser [^l]e 
-SFX s e iser [aeiou]le 
-SFX s e iser's [^l]e 
-SFX s e iser's [aeiou]le 
-SFX s e isers [^l]e 
-SFX s e isers [aeiou]le 
-SFX s le iliser [^aeiou]le 
-SFX s le iliser's [^aeiou]le 
-SFX s le ilisers [^aeiou]le 
-SFX s s ser is 
-SFX s s ser's is 
-SFX s s sers is 
-SFX s um iser um 
-SFX s um iser's um 
-SFX s um isers um 
-SFX s y iser [^aeiou]y 
-SFX s y iser's [^aeiou]y 
-SFX s y isers [^aeiou]y 
 
 # -er, -est, adjectival comparatives, both generated
 # adj
@@ -1129,14 +978,14 @@ SFX 5 0 woman [^bdklmnt]e
 # -ful, suffix forming adjectives from nouns, verbs, and adjectives and Latin stems
 # may also indicate the amount needed to fill, e.g. "three cupfuls" or "a bucketful"
 # adj
-SFX 6 Y 3
+SFX 6 adj Y 3
 SFX 6 0 ful [^y] 
 SFX 6 0 ful [aeiou]y 
 SFX 6 y iful [^aeiou]y 
 
 # -able, last syllable NOT stressed, -ate words <= 2 syllables
 # adj
-SFX 7 Y 9
+SFX 7 adj 0 9
 SFX 7 0 able [^acegilou]e 
 SFX 7 0 able [^aeiou][cl] 
 SFX 7 0 able [^cely] 
@@ -1147,92 +996,20 @@ SFX 7 0 lable [^aeio][aeiou]l
 SFX 7 e able [acegilou]e 
 SFX 7 y iable [^aeiou]y 
 
-# -ize/-ized/-izes/-izing forming verbs (from nouns)
-# TODO: consolidate this with standard verb conjugations
+# -ize forming verbs (from nouns)
 # verb
-SFX 8 Y 44
+SFX 8 verb DdSR 11
 SFX 8 0 ize [^aemsy] 
 SFX 8 0 ize [^i]s 
 SFX 8 0 ize [^u]m 
 SFX 8 0 ize [aeiou]y 
-SFX 8 0 ized [^aemsy] 
-SFX 8 0 ized [^i]s 
-SFX 8 0 ized [^u]m 
-SFX 8 0 ized [aeiou]y 
-SFX 8 0 izes [^aemsy] 
-SFX 8 0 izes [^i]s 
-SFX 8 0 izes [^u]m 
-SFX 8 0 izes [aeiou]y 
-SFX 8 0 izing [^aemsy] 
-SFX 8 0 izing [^i]s 
-SFX 8 0 izing [^u]m 
-SFX 8 0 izing [aeiou]y 
 SFX 8 0 tize a 
-SFX 8 0 tized a 
-SFX 8 0 tizes a 
-SFX 8 0 tizing a 
 SFX 8 e ize [^l]e 
 SFX 8 e ize [aeiou]le 
-SFX 8 e ized [^l]e 
-SFX 8 e ized [aeiou]le 
-SFX 8 e izes [^l]e 
-SFX 8 e izes [aeiou]le 
-SFX 8 e izing [^l]e 
-SFX 8 e izing [aeiou]le 
 SFX 8 le ilize [^aeiou]le 
-SFX 8 le ilized [^aeiou]le 
-SFX 8 le ilizes [^aeiou]le 
-SFX 8 le ilizing [^aeiou]le 
 SFX 8 s ze is 
-SFX 8 s zed is 
-SFX 8 s zes is 
-SFX 8 s zing is 
 SFX 8 um ize um 
-SFX 8 um ized um 
-SFX 8 um izes um 
-SFX 8 um izing um 
 SFX 8 y ize [^aeiou]y 
-SFX 8 y ized [^aeiou]y 
-SFX 8 y izes [^aeiou]y 
-SFX 8 y izing [^aeiou]y 
-
-# -izer forming (agent) nouns from adjectives ending in -ize
-# TODO: combine with -ize, combine with standard noun rules
-# noun
-SFX 9 Y 33
-SFX 9 0 izer [^aemsy] 
-SFX 9 0 izer [^i]s 
-SFX 9 0 izer [^u]m 
-SFX 9 0 izer [aeiou]y 
-SFX 9 0 izer's [^aemsy] 
-SFX 9 0 izer's [^i]s 
-SFX 9 0 izer's [^u]m 
-SFX 9 0 izer's [aeiou]y 
-SFX 9 0 izers [^aemsy] 
-SFX 9 0 izers [^i]s 
-SFX 9 0 izers [^u]m 
-SFX 9 0 izers [aeiou]y 
-SFX 9 0 tizer a 
-SFX 9 0 tizer's a 
-SFX 9 0 tizers a 
-SFX 9 e izer [^l]e 
-SFX 9 e izer [aeiou]le 
-SFX 9 e izer's [^l]e 
-SFX 9 e izer's [aeiou]le 
-SFX 9 e izers [^l]e 
-SFX 9 e izers [aeiou]le 
-SFX 9 le ilizer [^aeiou]le 
-SFX 9 le ilizer's [^aeiou]le 
-SFX 9 le ilizers [^aeiou]le 
-SFX 9 s zer is 
-SFX 9 s zer's is 
-SFX 9 s zers is 
-SFX 9 um izer um 
-SFX 9 um izer's um 
-SFX 9 um izers um 
-SFX 9 y izer [^aeiou]y 
-SFX 9 y izer's [^aeiou]y 
-SFX 9 y izers [^aeiou]y 
 
 # -man plural (men)
 # noun

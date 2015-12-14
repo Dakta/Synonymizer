@@ -47,12 +47,12 @@ O -al, noun from verb, simplified rules
 # o -ally, adverb from verb, simplified rules
 P -ness, -ness's, adjective degree of comparison
 p -less, comparative suffix forms adjectives
-Q -ise, -ised, -ises, -ising, -ize, -ized, -izes, -izing, all generated!
+# Q -ise, -ised, -ises, -ising, -ize, -ized, -izes, -izing, all generated!
 q -isation, -isations, -ization, -izations, all generated
 R -er, -ers, er's, doer, last syllable stressed, both forms generated
 r -er, -ers, er's, doer, last syllable NOT stressed, both forms generated
 S -s, noun plurals, verb conjugation
-s -iser, -isers, -izer, -izers, -iser's, -izer's, all generated
+# s -iser, -isers, -izer, -izers, -iser's, -izer's, all generated
 T -er, -est, adjectival comparatives, both generated
 t -isable, -isability, -izable, -izability, all generated
 U un- Prefix
@@ -77,8 +77,8 @@ z -ily, adverbial ending where adjective adds y
 5 -woman, -women, -woman's suffixes, all generated
 6 -ful, suffix
 7 -able, last syllable NOT stressed, -ate words <= 2 syllables
-8 -ize/-ized/-izes/-izing forming verbs (from nouns)
-9 -izer forming (agent) nouns from adjectives ending in -ize
+8 -ize forming verbs (from nouns)
+# 9 -izer forming (agent) nouns from adjectives ending in -ize
 ~ -men Plural of -man
 
 ---------------------------------------------------------------------
