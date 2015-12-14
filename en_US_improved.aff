@@ -331,22 +331,13 @@ SFX k 0 lingly [^aeio][aeiou]l
 SFX k e ingly [^eioy]e 
 SFX k ie yingly ie 
 
-# -ment, -ments, -ment's, suffix, both generated
-# TODO: consolidate with standard noun rules
+# -ment, suffix forming nouns expressing the means or result of an action
 # noun
-SFX L Y 12
+SFX L noun SM 4
 SFX L 0 ament m 
-SFX L 0 ament's m 
-SFX L 0 aments m 
 SFX L 0 ment [^my] 
 SFX L 0 ment [aeiou]y 
-SFX L 0 ment's [^my] 
-SFX L 0 ment's [aeiou]y 
-SFX L 0 ments [^my] 
-SFX L 0 ments [aeiou]y 
 SFX L y iment [^aeiou]y 
-SFX L y iment's [^aeiou]y 
-SFX L y iments [^aeiou]y 
 
 # -ably, simplified rules
 # adv
