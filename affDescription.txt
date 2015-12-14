@@ -44,7 +44,7 @@ m -man, -men, -man's, -men's suffixes, all generated
 N -ion, noun from verb, stress on last syllable of stem
 n -ion, -ions, noun from verb, stress NOT on last syllable of stem
 O -al, noun from verb, simplified rules
-o -ally, adverb from verb, simplified rules
+# o -ally, adverb from verb, simplified rules
 P -ness, -ness's, adjective degree of comparison
 p -less, comparative suffix forms adjectives
 Q -ise, -ised, -ises, -ising, -ize, -ized, -izes, -izing, all generated!

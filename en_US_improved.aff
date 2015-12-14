@@ -432,7 +432,7 @@ SFX n y ications [^p]y
 
 # -al, noun from verb, simplified rules
 # noun
-SFX O Y 12
+SFX O noun Y 12
 SFX O 0 al [^aebcrtxmy] 
 SFX O 0 al [^ipux]t 
 SFX O 0 al [^u]m 
@@ -445,22 +445,6 @@ SFX O e ial [bcgv]e
 SFX O um al um 
 SFX O y al ty 
 SFX O y ial [^t]y 
-
-# -ally, adverb from verb, simplified rules
-# adv
-SFX o Y 12
-SFX o 0 ally [^aebcrtxmy] 
-SFX o 0 ally [^ipux]t 
-SFX o 0 ally [^u]m 
-SFX o 0 ially [bcrx] 
-SFX o 0 lly a 
-SFX o 0 tally [iu]t 
-SFX o 0 ually [px]t 
-SFX o e ally [^bcgv]e 
-SFX o e ially [bcgv]e 
-SFX o um ally um 
-SFX o y ally ty 
-SFX o y ially [^t]y 
 
 # -ness, -ness's, forms noun from (chiefly) adjective, denoting state or condition
 # TODO: combine with standard noun rules?
