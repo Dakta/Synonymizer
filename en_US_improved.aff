@@ -905,10 +905,9 @@ SFX X ke cations ke
 SFX X t ssions mit 
 SFX X y ications y 
 
-# -ional, -ionally, simplified rules, both endings formed
-# TODO: combine with -ion -al/-ally
+# -ional, simplified rules
 # adj
-SFX x Y 40
+SFX x adj Y 40
 SFX x 0 ational [^aeiou]l 
 SFX x 0 ational [^bdelrstxy] 
 SFX x 0 ational [^e]r 
@@ -927,33 +926,10 @@ SFX x el ulsional el
 SFX x er rational er 
 SFX x ke cational ke 
 SFX x y icational y 
-# adv
-SFX x 0 ationally [^aeiou]l 
-SFX x 0 ationally [^bdelrstxy] 
-SFX x 0 ationally [^e]r 
-SFX x 0 ationally nt 
-SFX x 0 ionally [^n]t 
-SFX x 0 ionally [sx] 
-SFX x 0 lationally [aiou]l 
-SFX x b ptionally b 
-SFX x be ptionally be 
-SFX x d sionally d 
-SFX x de sional de 
-SFX x de sionally de 
-SFX x e ationally [^bcdkst]e 
-SFX x e ionally [^o]se 
-SFX x e ionally te 
-SFX x e itional ose 
-SFX x e itionally ose 
-SFX x e tionally ce 
-SFX x el ulsionally el 
-SFX x er rationally er 
-SFX x ke cationally ke 
-SFX x y icationally y 
 
 # -ly, adverb endings for adjectives
 # adv
-SFX Y Y 9
+SFX Y adv 0 9
 SFX Y 0 ally ic 
 SFX Y 0 ly [^cely] 
 SFX Y 0 ly [^i]c 
