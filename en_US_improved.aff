@@ -254,7 +254,6 @@ PFX I 0 in [^blmpr]
 PFX I 0 ir r 
 
 # -edness, degree, simplified rules
-# TODO: consolidate with standard noun rules?
 # noun
 SFX i Y 22
 SFX i 0 bedness [^aeio][aeiou]b 

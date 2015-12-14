@@ -125,11 +125,12 @@ The first line has 4 fields:
 
 Field
 -----
-1     SFX - indicates this is a suffix
-2     D   - is the name of the character which represents this suffix
-3     Y   - indicates it can be combined with prefixes (cross product)
-4     4   - indicates that sequence of 4 affix entries are needed to
-               properly store the affix information
+1     SFX   - indicates this is a suffix
+2     D     - is the name of the character which represents this suffix
+3     verb  - part of speech formed by applying this affix
+4     Uc    - list of affixes to apply after this one (replaced the previous Y/N cross product field for prefixes)
+5     4     - indicates that sequence of 4 affix entries are needed to
+              properly store the affix information
 
 The remaining lines describe the unique information for the 4 affix
 entries that make up this affix.  Each line can be interpreted
