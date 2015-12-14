@@ -3952,8 +3952,6 @@ badger-baiting
 badger/d
 badinage/SDMG
 badland/S
-badman/M
-badmen/M
 badminton/M
 badmouth/DGS
 badness/S
@@ -4174,7 +4172,6 @@ bankroll/GSDM
 bankrupt/GSDM
 bankruptcy/SM
 banner/d
-Bannerman/M
 bannister/SM
 bannock/MS
 Bannockburn
@@ -4202,7 +4199,7 @@ baptistery/SM
 baptistry's
 bar's
 bar-room/MS
-bar/CDESUG
+bar/CDESUGm
 Barack
 barb/SRGMDi
 Barbados/M
@@ -4276,7 +4273,6 @@ barley/MS
 barleycorn/SM
 Barlow/M
 barmaid/SM
-barman/M
 barmbrack
 barmen/M
 barmy/PYRT
@@ -5930,8 +5926,7 @@ boatclubs
 boathouse/SM
 boating/M
 boatload/MS
-boatman/M
-boatmen/M
+boatman/M~
 boatswain/MS
 boatyard/SM
 bob/MDGSZ
@@ -6067,8 +6062,7 @@ bonbon/SM
 bond/MmDJRGS
 bondage/MS
 bondholder/SM
-bondwoman/M
-bondwomen
+bondwoman/M~
 bone/pRMSZGD
 bonehead/DMS
 bonemeal
@@ -10855,8 +10849,7 @@ conjure/NRGSnD
 conjuring/M
 conk/RSD
 Conley/M
-conman/M
-conmen/M
+conman/M~
 connate
 connect/viVbGhDS
 connected/EPY
@@ -15603,8 +15596,7 @@ dustheap
 Dustin
 dustiness/S
 dusting/M
-dustman/M
-dustmen/M
+dustman/M~
 dustpan/MS
 dustproof
 dusty/TP
@@ -18920,8 +18912,7 @@ fireless
 firelight/M
 firelit
 firelock/S
-fireman/M
-firemen/M
+fireman/M~
 firepit
 fireplace/MS
 firepower/M
@@ -19561,9 +19552,8 @@ footlights
 footling
 footlocker/SM
 footloose
-footman/M
+footman/M~
 footmark/S
-footmen/M
 footnote/GDSM
 footpad/SM
 footpath/MS
@@ -20049,8 +20039,7 @@ freebie/SM
 freeboot/RSGD
 freeborn
 FreeBSD
-freedman/M
-freedmen/M
+freedman/M~
 freedom/SM
 freehand/Dh
 freehold/RSM
@@ -22296,8 +22285,7 @@ gunfight/RMS
 gunfire/SM
 gunk/MZS
 gunky/T
-gunman/M
-gunmen/M
+gunman/M~
 gunmetal/M
 Gunnar/M
 gunnel's
@@ -22923,8 +22911,7 @@ Hartman
 Harvard
 harvest/MRGDS
 harvested/U
-harvestman/M
-harvestmen/M
+harvestman/M~
 Harvey/M
 Harwell
 Harwich
@@ -23082,10 +23069,9 @@ headlight/MS
 headline/RDSMG
 headlock/MS
 headlong
-headman/M
+headman/M~
 headmaster/YMS
 headmastership/M
-headmen/M
 headmistress/SM
 headnote/S
 headphone/SM
@@ -23335,8 +23321,7 @@ hen/yMS
 hence
 henceforth
 henceforward
-henchman/M
-henchmen/M
+henchman/M~
 Henderson
 Hendrick/M
 Hendricks
@@ -26497,7 +26482,6 @@ iridologist/S
 iridology
 iris/MS
 Irish/m5
-Irishwomen/M
 irk/DSG
 irksome/PY
 irksomeness/S
@@ -28367,8 +28351,7 @@ layer/dC
 layering/M
 layette/SM
 laying/ca
-layman/M
-laymen/M
+layman/M~
 layout/SM
 layover/MS
 laypeople
@@ -29935,8 +29918,7 @@ mademoiselle/SM
 madhouse/MS
 Madhya
 Madison/M
-madman/M
-madmen/M
+madman/M~
 madness/S
 Madonna/M
 madras
@@ -31204,8 +31186,7 @@ mercenary/PMS
 mercer/QMS
 merchandise/RSDGJM
 merchant/BSM
-merchantman/M
-merchantmen/M
+merchantman/M~
 Mercier
 merciful/P
 mercifully/U
@@ -31763,8 +31744,7 @@ militia/mSM
 milk/RD2ZSMG
 milkiness/S
 milkmaid/SM
-milkman/M
-milkmen/M
+milkman/M~
 milkshake/S
 milksop/SM
 milkweed/MS
@@ -39092,11 +39072,10 @@ postinfectious
 postinflammatory
 posting/M
 postlude/MS
-postman/M
+postman/M~
 postmarital
 postmark/MSGD
 postmaster/MS
-postmen/M
 postmenopausal
 postmistress/MS
 postmodern
@@ -39566,8 +39545,7 @@ press/FIGSADC
 presser's/I
 presser/MS
 pressing/YS
-pressman/M
-pressmen/M
+pressman/M~
 pressroom
 pressure-cook/G
 pressure-cooker
@@ -43552,8 +43530,7 @@ Sanderson/M
 sandfly/S
 Sandhurst/M
 Sandi/M
-sandman/M
-sandmen/M
+sandman/M~
 Sandoval/M
 sandpaper/MdS
 sandpiper/SM
@@ -44199,9 +44176,8 @@ sealant/SM
 sealer/MS
 sealskin
 seam/MDGSZp
-seaman/YM
+seaman/YM~
 seamanship/M
-seamen/M
 seamer/MS
 seamfree
 seamier
@@ -47301,8 +47277,7 @@ stable-mate
 stable/FMS
 stabled
 stableful/S
-stableman/M
-stablemen/M
+stableman/M~
 stableness
 stabler
 stablest
@@ -48113,10 +48088,8 @@ stunner/MS
 stunning/Y
 stunsail/S
 stunt/iSDGM
-stuntman/M
-stuntmen/M
-stuntwoman
-stuntwomen
+stuntman/M~
+stuntwoman/~
 stupefaction/MS
 stupefy/SkGD
 stupendous/YP
@@ -51164,8 +51137,7 @@ traineeship/S
 trainer/MS
 training/MS
 trainload
-trainman/M
-trainmen/M
+trainman/M~
 trainspotter/S
 trainspotting
 traipse/SGD
@@ -54341,7 +54313,7 @@ washday/M
 washed-out
 washed/U
 washer/5SM
-washerwomen/M
+washerwoman/~
 washhouse/S
 washing-up
 washing/SM
@@ -54687,8 +54659,7 @@ wellness
 wellspring/SM
 Wellsville/M
 welsh
-Welshman/M
-Welshmen/M
+Welshman/M~
 Welshwoman/M
 Welshwomen
 welt/RSDGM
@@ -55292,7 +55263,7 @@ Wolverhampton/M
 wolverine/MS
 Wolverton
 wolves
-woman/MsQY
+woman/MsQY~
 womanhood/SM
 womanish
 womankind/M
@@ -55300,7 +55271,6 @@ womanlike
 womanly/TP
 womb/MS
 wombat/MS
-women/M
 womenfolk/M
 won
 won't
@@ -55411,12 +55381,11 @@ working-class
 working/MS
 Workington
 workload/SM
-workman/M
+workman/M~
 workmanlike
 workmanship/MS
 workmaster
 workmate/S
-workmen/M
 workout/MS
 workpeople
 workperson
@@ -55707,9 +55676,8 @@ yelp/DGS
 Yemen/M
 Yemeni
 yen/DSGM
-yeoman/YM
+yeoman/YM~
 yeomanry
-yeomen/M
 Yeovil
 yep
 Yerevan/M

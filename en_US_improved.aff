@@ -357,30 +357,15 @@ SFX l y iably [^aeiou]y
 SFX M Y 1
 SFX M 0 's . 
 
-# -man, -men, -man's, -men's suffixes, all generated
+# -man, suffixes, all generated
 # TODO: consolidate with standard noun rules
 # noun
-SFX m Y 20
+SFX m noun M~ 20
 SFX m 0 man [^aeiou][bdklmnt]e 
 SFX m 0 man [^bdeknmt] 
 SFX m 0 man [^bdklmnt]e 
-SFX m 0 man's [^aeiou][bdklmnt]e 
-SFX m 0 man's [^bdeknmt] 
-SFX m 0 man's [^bdklmnt]e 
-SFX m 0 men [^aeiou][bdklmnt]e 
-SFX m 0 men [^bdeknmt] 
-SFX m 0 men [^bdklmnt]e 
-SFX m 0 men's [^aeiou][bdklmnt]e 
-SFX m 0 men's [^bdeknmt] 
-SFX m 0 men's [^bdklmnt]e 
 SFX m 0 sman [aeiou][bdklmnt]e 
 SFX m 0 sman [bdknmt] 
-SFX m 0 sman's [aeiou][bdklmnt]e 
-SFX m 0 sman's [bdknmt] 
-SFX m 0 smen [aeiou][bdklmnt]e 
-SFX m 0 smen [bdknmt] 
-SFX m 0 smen's [aeiou][bdklmnt]e 
-SFX m 0 smen's [bdknmt] 
 
 # -ion, noun from verb, stress on last syllable of stem
 # noun
@@ -1204,22 +1189,12 @@ PFX 4 0 trans .
 # -woman, -women, -woman's suffixes, all generated
 # TODO: consolidate with standard noun conjugations
 # noun
-SFX 5 Y 15
+SFX 5 noun MS~ 5
 SFX 5 0 swoman [aeiou][bdklmnt]e 
 SFX 5 0 swoman [bdknmt] 
-SFX 5 0 swoman's [aeiou][bdklmnt]e 
-SFX 5 0 swoman's [bdknmt] 
-SFX 5 0 swomen [aeiou][bdklmnt]e 
-SFX 5 0 swomen [bdknmt] 
 SFX 5 0 woman [^aeiou][bdklmnt]e 
 SFX 5 0 woman [^bdeknmt] 
 SFX 5 0 woman [^bdklmnt]e 
-SFX 5 0 woman's [^aeiou][bdklmnt]e 
-SFX 5 0 woman's [^bdeknmt] 
-SFX 5 0 woman's [^bdklmnt]e 
-SFX 5 0 women [^aeiou][bdklmnt]e 
-SFX 5 0 women [^bdeknmt] 
-SFX 5 0 women [^bdklmnt]e 
 
 # -ful, suffix forming adjectives from nouns, verbs, and adjectives and Latin stems
 # may also indicate the amount needed to fill, e.g. "three cupfuls" or "a bucketful"
@@ -1328,3 +1303,8 @@ SFX 9 um izers um
 SFX 9 y izer [^aeiou]y 
 SFX 9 y izer's [^aeiou]y 
 SFX 9 y izers [^aeiou]y 
+
+# -man plural (men)
+# noun
+SFX ~ noun M 1
+SFX - man men man

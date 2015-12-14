@@ -79,6 +79,7 @@ z -ily, adverbial ending where adjective adds y
 7 -able, last syllable NOT stressed, -ate words <= 2 syllables
 8 -ize/-ized/-izes/-izing forming verbs (from nouns)
 9 -izer forming (agent) nouns from adjectives ending in -ize
+~ -men Plural of -man
 
 ---------------------------------------------------------------------
 To Do:
