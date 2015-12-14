@@ -57,14 +57,18 @@ public class Affixer {
 
 		public char id;
 		public AFFIX_TYPE type;
-		public boolean canPrefix;
-		ArrayList<AffixRule> rules;
+        public PART_OF_SPEECH pos;
+        public String combinations;
+
+        ArrayList<AffixRule> rules;
 		
-		public Affix(char id, String canPrefix, String type) {
+		public Affix(String type, char id, String pos, String comb) {
 			rules = new ArrayList<AffixRule>();
-			this.type = parseType(type);
+
 			this.id = id;
-			this.canPrefix = canPrefix.toLowerCase().trim().equals("y");
+			this.type = parseType(type);
+			this.pos = Affixer.parsePartOfSpeech(pos);
+			this.combinations = comb;
 		}
 		
 		public void addRule(AffixRule rule) {
@@ -72,7 +76,7 @@ public class Affixer {
 		}
 		@Override
 		public String toString() {
-		    String ret = type + " " + id + " " + canPrefix + "\n";
+		    String ret = type + " " + id + " " + pos + " " + combinations + "\n";
 		    for (AffixRule rule : rules) {
 		        ret += rule + "\n";
 		    }
@@ -84,52 +88,12 @@ public class Affixer {
 	
 	public Affixer() throws Exception {
 		this.affixes = new HashMap<Character, Affix>();
-		readAffixFile(new File("src/finalProject/dict-en/en_US.aff"));
+		readAffixFile(new File("src/finalProject/en_US_improved.aff"));
 	}
 
 	public void readAffixFile(File f) throws Exception {
 		/*
-		 * ---------------------------------------------------------------------
-		What follows is cut and pasted from the instructions at
-		http://whiteboard.openoffice.org/lingucomponent/affix.readme
-		
-		# Example verb past tense
-        SFX D Y 4
-        SFX D   0     d          e
-        SFX D   0     ed         [^ey]
-        SFX D   0     ed         [aeiou]y
-        SFX D   y     ied        [^aeiou]y
-		
-		The first line has 4 fields:
-		
-		Field
-		-----
-		1     SFX - indicates this is a suffix
-		2     D   - is the name of the character which represents this suffix
-		3     Y   - indicates it can be combined with prefixes (cross product)
-		4     4   - indicates that sequence of 4 affix entries are needed to
-		               properly store the affix information
-		
-		The remaining lines describe the unique information for the 4 affix
-		entries that make up this affix.  Each line can be interpreted
-		as follows: (note fields 1 and 2 are used as a check against line 1 info)
-		
-		Field
-		-----
-		1     SFX         - indicates this is a suffix
-		2     D           - is the name of the character which represents this affix
-		3     y           - the string of chars to strip off before adding affix
-		                         (a 0 here indicates the NULL string)
-		4     ied         - the string of affix characters to add
-		                         (a 0 here indicates the NULL string)
-		5     [^aeiou]y   - the conditions which must be met before the affix
-		                    can be applied
-		
-		Field 5 is interesting.  Since this is a suffix, field 5 tells us that
-		there are 2 conditions that must be met.  The first condition is that
-		the next to the last character in the word must *NOT* be any of the
-		following "a", "e", "i", "o" or "u".  The second condition is that
-		the last character of the word must end in "y".
+		 * See affDescription.txt for the aff file format
 		 */
 		
 		// TODO: implement this
@@ -149,14 +113,19 @@ public class Affixer {
                         // new affix entry
                         addAffix(affix);
                         ruleID = splitLine[1].charAt(0);
-                        affix = new Affix(ruleID, splitLine[2], splitLine[0]);
+                        if (splitLine.length == 5) {
+                            affix = new Affix(splitLine[0], ruleID, splitLine[2], splitLine[3]);
+                        } else {
+                            // we just assume that it forms a noun (wrong!) with plural/possessive
+                            affix = new Affix(splitLine[0], ruleID, "noun", "SM");
+                        }
                     } else {
                         // add rule to current entry
                         affix.addRule(affix.new AffixRule(splitLine[2], splitLine[4], splitLine[3]));
                     }
     		    } else {
     		        // we can ignore this line
-    		        // example: REP, SET, TRY, <blank>
+    		        // example: REP, SET, TRY, <blank>, #comment
     		        continue;
     		    }
 		    }

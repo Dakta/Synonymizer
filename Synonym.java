@@ -26,4 +26,9 @@ public class Synonym implements Comparable<Synonym> {
 	public int compareTo(Synonym o) {
 		return ((Synonym) o).frequency - this.frequency;
 	}
+	
+	@Override
+	public String toString() {
+	    return synonym + " - " + frequency;
+	}
 }

@@ -19,6 +19,7 @@ public class Thesaurus {
 	
 	public Thesaurus() throws Exception {
 	    this.afxr = new Affixer();
+//	    System.out.println(afxr);
 	    
 		this.entries = new HashMap<String, Entry>();
 	    this.conjugationRules = new HashMap<String, Affixer.Affix>();
@@ -136,8 +137,8 @@ public class Thesaurus {
         Affixer.Affix afx = conjugationRules.get(word);
         // for "unconjugated" words:
         if (afx == null) return word;
-        
-        return entry.getLongSynonymOfType(afx.pos);
+                
+        return Affixer.applyRules(afx, entry.getLongSynonym());
 	}
 
 	

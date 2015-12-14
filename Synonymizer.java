@@ -31,7 +31,8 @@ public class Synonymizer {
 		    	words = line.split("\\s+"); // split on white space
 		    	for (String word : words) {
 		    	    // we shouldn't actually lowercase stuff because proper nouns
-		    		// word = word.toLowerCase();
+		    	    boolean uppercase = word.matches("^[A-Z].*");
+		    		word = word.toLowerCase();
                     punctuation = "";
 
                     // separate word from any trailing punctuation
@@ -46,18 +47,24 @@ public class Synonymizer {
 		    		if (word.equals("")) continue; // skip empty entries
 		    		// look up word in Thesaurus
 		    		Entry entry = ths.entries.get(word);
+		    		String synonym;
 		    		// if found:
 		    		if (entry != null && word.length() > 3) {
 		    			// print synonym
 		    		    if (entry.word.equals(word)) {
 		    		        // no need to affix the synonym
 		    		        // get the entry's longest synonym
-		    		        System.out.print(entry.getLongSynonym());
+		    		        synonym = entry.getLongSynonym();
 		    		    } else {
 		    		        // we need to affix the synonym
 		    		        // thesaurus has a method for this
-		    		        System.out.print(ths.getSynonym(word));
+		    		        synonym = ths.getSynonymOfType(word);
 		    		    }
+		    		    if (uppercase) {
+		    		        // make uppercase
+		    		        synonym = synonym.substring(0, 1).toUpperCase() + synonym.substring(1);
+		    		    }
+                        System.out.print(synonym);
 		    		/// not found? just use what we have
 		    		} else {
 		    			// print word
