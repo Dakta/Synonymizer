@@ -1045,7 +1045,7 @@ SFX + y izability [^aeiou]y
 # -ization(s), nouns from adjectives ending in -ize (incl plurals)
 # TODO: consolidate with standard noun conjugations
 # noun
-SFX - Y 22
+SFX - noun SM 22
 SFX - 0 ization [^aemsy] 
 SFX - 0 ization [^i]s 
 SFX - 0 ization [^u]m 
@@ -1057,18 +1057,6 @@ SFX - le ilization [^aeiou]le
 SFX - s zation is 
 SFX - um ization um 
 SFX - y ization [^aeiou]y 
-# noun pl
-SFX - 0 izations [^aemsy] 
-SFX - 0 izations [^i]s 
-SFX - 0 izations [^u]m 
-SFX - 0 izations [aeiou]y 
-SFX - 0 tizations a 
-SFX - e izations [^l]e 
-SFX - e izations [aeiou]le 
-SFX - le ilizations [^aeiou]le 
-SFX - s zations is 
-SFX - um izations um 
-SFX - y izations [^aeiou]y 
 
 # non- Prefix
 PFX 0 Y 1
@@ -1116,28 +1104,13 @@ SFX 2 e iness [^aeiouy]e
 # -ist, -ists, -ists's, professions and descriptors
 # TODO: consolidate with standard noun conjugations
 # noun
-SFX 3 Y 21
+SFX 3 noun SM 6
 SFX 3 0 ist [aeiou]e 
 SFX 3 0 ist [aeioubp]y 
-SFX 3 0 ist's [^eoy] 
-SFX 3 0 ist's [aeiou]e 
-SFX 3 0 ist's [aeioubp]y 
-SFX 3 0 ists [^eoy] 
-SFX 3 0 ists [^eoy] 
-SFX 3 0 ists [aeiou]e 
-SFX 3 0 ists [aeioubp]y 
 SFX 3 ce tist ce 
-SFX 3 ce tist's ce 
-SFX 3 ce tists ce 
 SFX 3 e ist [^aceiou]e 
-SFX 3 e ist's [^aceiou]e 
-SFX 3 e ists [^aceiou]e 
 SFX 3 o ist o 
-SFX 3 o ist's o 
-SFX 3 o ists o 
 SFX 3 y ist [^aeioubp]y 
-SFX 3 y ist's [^aeioubp]y 
-SFX 3 y ists [^aeioubp]y 
 
 # trans-, Prefix
 PFX 4 Y 1
