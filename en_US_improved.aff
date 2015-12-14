@@ -446,16 +446,13 @@ SFX O um al um
 SFX O y al ty 
 SFX O y ial [^t]y 
 
-# -ness, -ness's, forms noun from (chiefly) adjective, denoting state or condition
+# -ness, forms noun from (chiefly) adjective, denoting state or condition
 # TODO: combine with standard noun rules?
 # noun
-SFX P Y 6
+SFX P noun M 3
 SFX P 0 ness [^y] 
 SFX P 0 ness [aeiou]y 
-SFX P 0 ness's [^y] 
-SFX P 0 ness's [aeiou]y 
 SFX P y iness [^aeiou]y 
-SFX P y iness's [^aeiou]y 
 
 # -less, comparative suffix (forms adjectives)
 # adj
