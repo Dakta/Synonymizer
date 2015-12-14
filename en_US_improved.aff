@@ -498,9 +498,8 @@ SFX P 0 ness's [aeiou]y
 SFX P y iness [^aeiou]y 
 SFX P y iness's [^aeiou]y 
 
-# -less, comparative suffix (forms both adjectives and adverbs)
-# TODO: come up with way to handle setting part of speech from root form
-# ad
+# -less, comparative suffix (forms adjectives)
+# adj
 SFX p Y 5
 SFX p 0 ess ll 
 SFX p 0 less [^l]l 

@@ -46,7 +46,7 @@ n -ion, -ions, noun from verb, stress NOT on last syllable of stem
 O -al, noun from verb, simplified rules
 o -ally, adverb from verb, simplified rules
 P -ness, -ness's, adjective degree of comparison
-p -less, comparative suffix
+p -less, comparative suffix forms adjectives
 Q -ise, -ised, -ises, -ising, -ize, -ized, -izes, -izing, all generated!
 q -isation, -isations, -ization, -izations, all generated
 R -er, -ers, er's, doer, last syllable stressed, both forms generated
@@ -91,8 +91,8 @@ To Do:
 -ously (generated adverbial form of -ous)
 
 ---------------------------------------------------------------------
-The following minor suffixes and compound forms have been ignored, based on 
-frequency counts in the standard word list
+The following minor suffixes and compound forms have been ignored,
+based on frequency counts in the standard word list:
 
 -fulness
 -lessly
