@@ -26,7 +26,14 @@ public class Affixer {
 		PFX, SFX
 	}
 	public static AFFIX_TYPE parseType(String type) {
-		return (type.toLowerCase().trim().equals("sfx")) ? AFFIX_TYPE.SFX : AFFIX_TYPE.PFX;
+		return AFFIX_TYPE.valueOf(type.toUpperCase().trim());
+	}
+	
+	public static enum PART_OF_SPEECH {
+	    NOUN, VERB, ADJ, ADV
+	}
+	public static PART_OF_SPEECH parsePartOfSpeech(String pos) {
+	    return PART_OF_SPEECH.valueOf(pos.toUpperCase().trim());
 	}
 	
 	public class Affix {

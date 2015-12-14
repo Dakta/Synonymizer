@@ -38,7 +38,7 @@ public class Thesaurus {
 		    while ((line = br.readLine()) != null) {
 	    	   splitLine = line.split("\\|");
 		       if (line.startsWith("(")) {
-		    	   dfn = new Definition(splitLine[0].replaceAll("\\s*\\((.*)\\)\\s*", "$1"));
+		    	   dfn = new Definition(Affixer.parsePartOfSpeech(splitLine[0].replaceAll("\\s*\\((.*)\\)\\s*", "$1")));
 		    	   for (int i = 1; i < splitLine.length; i++) {
 		    		   synonym = splitLine[i].trim();
 //		    		   System.out.println(synonym);
@@ -128,7 +128,16 @@ public class Thesaurus {
 	    if (afx == null) return word;
 	    
 	    String syn = entry.getLongSynonym();
-	    return afxr.applyRules(afx, syn);
+	    return Affixer.applyRules(afx, syn);
+	}
+	
+	public String getSynonymOfType(String word) {
+        Entry entry = entries.get(word);
+        Affixer.Affix afx = conjugationRules.get(word);
+        // for "unconjugated" words:
+        if (afx == null) return word;
+        
+        return entry.getLongSynonymOfType(afx.pos);
 	}
 
 	

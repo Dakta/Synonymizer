@@ -30,7 +30,8 @@ public class Synonymizer {
 		    while ((line = br.readLine()) != null) {
 		    	words = line.split("\\s+"); // split on white space
 		    	for (String word : words) {
-		    		word = word.toLowerCase();
+		    	    // we shouldn't actually lowercase stuff because proper nouns
+		    		// word = word.toLowerCase();
                     punctuation = "";
 
                     // separate word from any trailing punctuation
