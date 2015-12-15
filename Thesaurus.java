@@ -19,13 +19,12 @@ public class Thesaurus {
 	
 	public Thesaurus() throws Exception {
 	    this.afxr = new Affixer();
-//	    System.out.println(afxr);
 	    
 		this.entries = new HashMap<String, Entry>();
 	    this.conjugationRules = new HashMap<String, Affixer.Affix>();
 
-		File thesaurusFile = new File("src/finalProject/th_en_US_new.dat");
 //		File thesaurusFile = new File("src/finalProject/short_ths.dat");
+		File thesaurusFile = new File("src/finalProject/th_en_US_new.dat");
 				
 		try (BufferedReader br = new BufferedReader(new FileReader(thesaurusFile))) {
 			// skip first line, we'll deal with character encoding oddities later
@@ -42,11 +41,7 @@ public class Thesaurus {
 		    	   dfn = new Definition(Affixer.parsePartOfSpeech(splitLine[0].replaceAll("\\s*\\((.*)\\)\\s*", "$1")));
 		    	   for (int i = 1; i < splitLine.length; i++) {
 		    		   synonym = splitLine[i].trim();
-//		    		   System.out.println(synonym);
-		    		   if (word.equals(synonym)) {
-//		    			   System.out.print("equal:");
-//		    			   System.out.println(word + " - " + synonym);
-		    		   } else {
+		    		   if (!word.equals(synonym)) {
 		    			   dfn.addSynonym(synonym);
 		    		   }
 		    	   }
@@ -57,20 +52,15 @@ public class Thesaurus {
 		    	   if (entry.definitions.size() > 0) {		    		   
 		    		   this.addEntry(word, entry);
 		    	   }
-//		    	   System.out.println(entry);
 		    	   word = splitLine[0].trim();
 		    	   entry = new Entry(word);
 		       }
-		    }
-		    
-//		    this.removeUnidirectionalSynonyms();
+		    }		    
 		}
 				
-//		for (java.util.Map.Entry<String, Entry> e : this.entries.entrySet()) {
-//			System.out.println(e.getValue());
-//		}
 
-        File dictFile = new File("src/finalProject/dict-en/en_US.dic");
+//      File dictFile = new File("src/finalProject/dict-en/en_US.dic");
+		File dictFile = new File("src/finalProject/en_US_improved.dic");
                 
         try (BufferedReader br = new BufferedReader(new FileReader(dictFile))) {
             br.readLine(); // skip first line; it's just a count of file length
@@ -116,12 +106,11 @@ public class Thesaurus {
         }
         // We already duplicate checked this
         entries.putAll(conjugatedForms);
+        
+        System.out.println("Conjugated " + conjugatedForms.size() + " words for a total of " + entries.size() + " entries.");
 	}
 	
-//	public void linkAllSynonyms() {
-//	    
-//	}
-
+	
 	public String getSynonym(String word) {
 	    Entry entry = entries.get(word);
 	    Affixer.Affix afx = conjugationRules.get(word);
@@ -191,8 +180,6 @@ public class Thesaurus {
 	public String toString() {
 		String repr = "";
 		for (java.util.Map.Entry<String, Entry> entry : this.entries.entrySet()) {
-//			repr = entry.getKey() + ":\n";
-			System.out.println(entry);
 			repr += entry.getValue().toString();
 		}
 		return repr;
