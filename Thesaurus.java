@@ -18,7 +18,9 @@ public class Thesaurus {
 	}
 	
 	public Thesaurus() throws Exception {
+	    Stopwatch st = new Stopwatch();
 	    this.afxr = new Affixer();
+        System.out.println("# ✓ Loaded Affixer in " + st.elapsedNanos() + " nanoseconds.");
 	    
 		this.entries = new HashMap<String, Entry>();
 	    this.conjugationRules = new HashMap<String, Affixer.Affix>();
@@ -83,6 +85,8 @@ public class Thesaurus {
 	}
 	
 	public void conjugateAllWords() {
+	    Stopwatch st = new Stopwatch();
+	    
         HashMap<String, Entry> conjugatedForms = new HashMap<String, Entry>();
 	    
         for (java.util.Map.Entry<String, Entry> ent : this.entries.entrySet()) {
@@ -107,7 +111,8 @@ public class Thesaurus {
         // We already duplicate checked this
         entries.putAll(conjugatedForms);
         
-        System.out.println("Conjugated " + conjugatedForms.size() + " words for a total of " + entries.size() + " entries.");
+        System.out.println("# ✓ Generated all affixed forms in " + st.elapsedNanos() + " nanoseconds.");
+        System.out.println("#   - Generated " + conjugatedForms.size() + " words for a total of " + entries.size() + " entries.");
 	}
 	
 	
